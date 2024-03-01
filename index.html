@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombreApellido">Nombre y apellido</label>
+            <input type="text" id="nombreApellido" class="input_father" required placeholder="susana horia">
+
+            <label for="correoElectronico">Correo Electronico</label>
+            <input type="email" name="" id="correoElectronico" class="input_father"required placeholder="email@dominio.com">
+
+            <label for="telefono">telefono</label>
+            <input type="text" name="" id="telefono" class="input_father"required placeholder="+57 3125874523">
+            
+            <label for="mensaje">Mensaje</label>
+            <textarea name="" id="mensaje" cols="68" rows="10" class="input_father"></textarea>
+            
+        <fieldset>
+            <legend>Como te gustaria que te contactemos</legend>
+            <label for="radio_email"><input type="radio" name="contacto" value="email" id="radio_email" required >Email</label>
+            
+
+            <label for="radio_telefono"><input type="radio" name="contacto" value="telefono" id="radio_telefono" required>Telefono</label>
+            
+
+            <label for="radio_whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio_whatsapp"required checked>Whatsapp</label>
+            
+        </fieldset>
+        </form>
+        <label class="checkbox" ><input type="checkbox" checked>te gustaria recibir actualizaciones de nuestro contenido?</label>
+                <input type="submit" value="enviar formulario" class="enviar"> 
+    </main>
+</body>
+</html>
